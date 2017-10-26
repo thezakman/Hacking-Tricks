@@ -1,1 +1,24 @@
 <script>document.write(String.fromCharCode(105,110,102,111,64,114,105,110,103,122,101,114,48,116,101,97,109,46,99,111,109));</script>
+
+
+
+var = [105,110,102,111,64,114,105,110,103,122,101,114,48,116,101,97,109,46,99,111,109]
+var = "hello@icloud.com"
+
+def decode(var):
+    txt = ''
+    for c in var:
+        txt = txt + chr(c)
+
+    print txt
+
+def encode(var):
+    txt = ''
+    for c in var:
+        txt = txt + str(ord(c)) + ","
+
+    print "<script>document.write(String.fromCharCode("+txt[0:len(txt)-1]+"));</script>"
+
+
+#encode(var)
+#decode(var)
